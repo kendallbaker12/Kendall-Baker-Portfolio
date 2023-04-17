@@ -1,7 +1,6 @@
 body {
     background: linear-gradient(to bottom, #5e5c5c, #6a7779);
     background-attachment: fixed;
-    color: #666666;
     font-size: medium;
     font-family: Verdana, Arial, sans-serif;
     margin: 0px;
@@ -12,13 +11,14 @@ main {
     padding-right: 2rem;
     grid-row: 4/5;
     grid-column: 2/8;
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
 }
 
 #wrapper {
     display: grid;
     grid-template-rows: minmax(0px, auto);
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+
 }
 
 header {
@@ -30,7 +30,7 @@ header {
     grid-column: 1/9;
 }
 
-#test{
+#test {
     display: flex;
 }
 
@@ -56,44 +56,50 @@ footer {
 }
 
 nav {
-    grid-row: 2/3;
-    grid-column: 2/8;
-    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 80px;
 }
 
 nav ul {
-    margin: 15px;
-    padding: 15px;
     display: flex;
-    flex-flow: row nowrap;
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    width: 100%;
-}
-
-nav a:hover {
-    background-color: #BA1C21;
-    border-radius: 25px;
-    cursor: pointer;
+nav li {
+    margin: 0 1rem;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #FFFFFF;
-    padding: 1rem 0rem;
-    display: block;
-    text-align: center;
-    border-radius: 25px;
+    font-weight: bold;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    border-radius: 35px;
+
+}
+
+nav li:hover {
+    border-radius: 35px;
 }
 
 .dropbtn {
     color: white;
-    padding: 16px;
+    padding: 1rem;
+    margin: 0 1rem;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 35px;
 }
 
 
@@ -138,6 +144,7 @@ nav a {
 
 .dropdown:hover .dropbtn {
     background-color: #BA1C21;
+
 }
 
 #myVideo {
@@ -165,17 +172,20 @@ nav a {
     flex-direction: column;
     align-items: center;
 }
-.content h1{
+
+.content h1 {
     top: 5px;
     color: whitesmoke
 }
-#main-h1{
+
+#main-h1 {
     color: #062c4a;
     background-color: #100f0f;
     border-radius: 45px;
     padding: 10px;
 }
-#my-video{
+
+#my-video {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100%;
