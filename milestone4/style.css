@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #5e5c5c, #6a7779);
+    background: linear-gradient(to bottom, #edeef3, #0a0a0a);
     background-attachment: fixed;
     font-size: medium;
     font-family: Verdana, Arial, sans-serif;
@@ -143,7 +143,7 @@ nav li:hover {
 
 
 .dropdown:hover .dropbtn {
-    background-color: #BA1C21;
+    background-color: #224175;
 
 }
 
@@ -323,4 +323,8 @@ nav li:hover {
 
 .button:hover span:nth-child(4) {
     bottom: 50%;
+}
+
+.fa-solid .fa-star {
+    color: yellow;
 }
